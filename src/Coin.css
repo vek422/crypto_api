@@ -1,0 +1,43 @@
+.coin-container{
+    border-bottom: 1px solid rgb(96, 96, 96);
+}
+._h{
+    border-top: 1px solid rgb(96, 96, 96);
+
+}
+.coin-row{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.coin-row .hover:hover{
+    background-color:rgba(0, 0, 0, 0.085);
+}
+.coin,.coin-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.coin p {
+width: calc(100%/3);
+}
+img,.img{
+width: 30px;
+height: 30px;
+}
+.coin-data p {
+width: calc((100%/3));
+}   
+
+.red{
+    color: red;
+    text-align: right;
+}
+.green {
+    color: rgb(48, 174, 48);
+    text-align: right;
+}

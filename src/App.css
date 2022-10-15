@@ -1,0 +1,26 @@
+.coin-app{
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+.coin-search{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0px 100px 0px;
+}
+
+.coin-input{
+    padding: 5px 10px;
+    margin: 10px ;
+    border: none;
+    border-bottom: 1px solid rgb(96, 96, 96);
+    outline-style: none;
+    background:transparent;
+    color: white;
+    
+}
+.coin-list{
+    margin: 0% 10%;
+}
