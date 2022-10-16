@@ -5,7 +5,7 @@
 
 .coin {
     display: grid;
-    grid-template-columns: 10% 20% 10% 20% 25% 20%;
+    grid-template-columns: 5% 10% 20% 20% 35% 10%;
     
 
 }
