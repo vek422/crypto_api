@@ -1,25 +1,23 @@
 // import React from 'react'
+import { Box,Text,Card } from 'dracula-ui';
 import './Coin.css';
 const Coin = ({name,image,symbol,price,volume ,priceChange}) => {
   return (
-    <div className='coin-container'>
-        <div className='coin-row hover'>
-            <div className='coin'>
-                <img src={image} alt="crypto"/>
-                <p>{name}</p>
-                <p className='coin-symbol'>{symbol}</p>
-            </div>
-            <div className='coin-data'> 
-                <p className='coin-price'>${price}</p>
-                <p className='coin-volume'>${volume.toLocaleString()}</p>
-                { priceChange<0 ? 
-                  (<p className="coin-percent red" >{priceChange.toFixed(2)}%</p>)
-                    :(<p className="coin-percent green" >{priceChange.toFixed(2)}%</p>)
+    <Card className='coin-row' variant="subtle" color="pink"  >
+        <Box className='coin' p='sm'>
+                <Box className="text"><img src={image} alt="crypto" className=''/></Box>
+                <Text color="cyan" className='text'>{name}</Text>
+                <Text className='coin-symbol text' color="cyan">{symbol}</Text>
 
-                }
-            </div>
-        </div>
-    </div>
+                <Text  color="cyan" className='coin-price'>${price}</Text>
+                <Text  color="cyan" className='coin-volume'>${volume.toLocaleString()}</Text>
+                  { priceChange<0 ? 
+                    (<Text color="green"className="coin-percent" >{priceChange.toFixed(2)}%</Text>)
+                    :(<Text color="red" className="coin-percent" >{priceChange.toFixed(2)}%</Text>)
+              }
+        </Box>
+        </Card>
+    
   )
 }
 

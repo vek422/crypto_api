@@ -1,19 +1,16 @@
-export default ()=>{
-    return(
-    <div className='coin-container _h'>
-        <div className='coin-row '>
-            <div className='coin'>
-                {/* <img src={image} alt="crypto" /> */}
-                <span className="img">{"Logo"}</span>
-                <p>{"Name"}</p>
-                <p className='coin-symbol'>{"Symbol"}</p>
-            </div>
-            <div className='coin-data'>
-                <p className='coin-price'>{"Price"}</p>
-                <p className='coin-volume'>{"MarketCap"}</p>
-                <p className="coin-percent" style={{textAlign:'right'}} >{"PriceChange"}</p> 
-            </div>
-        </div>
-    </div>
+import { Box, Card, Text } from "dracula-ui"
+export default () => {
+    return (
+            <Card className='coin-row' variant="subtle" color="red" glowColor="" >
+                <Box className='coin' p='sm'>
+                    {/* <img src={image} alt="crypto" /> */}
+                    <Text className="" color="purpleCyan">{"Logo"}</Text>
+                    <Text color="purpleCyan">{"Name"}</Text>
+                    <Text className='coin-symbol' color="purpleCyan">{"Symbol"}</Text>
+                    <Text color="purpleCyan" className='coin-price'>{"Price"}</Text>
+                    <Text color="purpleCyan" className='coin-volume'>{"MarketCap"}</Text>
+                    <Text color="purpleCyan" className="coin-percent"  >{"PriceChange"}</Text>
+                </Box>
+            </Card>
     )
 }
